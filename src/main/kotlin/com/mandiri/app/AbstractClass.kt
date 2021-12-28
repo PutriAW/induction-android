@@ -12,5 +12,6 @@ fun main() {
     val city = City("Bandung")
     val country = Country("Bandung")
 
-    println(city)
+    println(city.name)
+    println(country.name)
 }
