@@ -4,6 +4,9 @@ import com.mandiri.oop.Location
 import java.util.*
 
 class SpecialOrder(date: Date = Date(), number: String = " ") : Order(date, number) {
+    override fun confirm() {
+        super.confirm()
+    }
     fun dispatch(name: String, location: String){
         println("Dispatching .....")
         println("Order Number  : ${this.number} ")
