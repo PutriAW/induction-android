@@ -3,6 +3,7 @@ package com.mandiri.excercise.entity
 import java.util.*
 
 class NormalOrder(date: Date = Date(), number: String = ""): Order(date, number) {
+
     fun dispatch(name: String, location: String){
         println("Dispatching .....")
         println("Order Number  : ${this.number} ")

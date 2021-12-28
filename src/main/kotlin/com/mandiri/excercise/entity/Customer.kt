@@ -2,7 +2,7 @@ package com.mandiri.excercise.entity
 
 import java.util.*
 
-class Customer(val name: String, val location: String) {
+class Customer(private val name: String, private val location: String) {
     var specialOrderCount = 0
     var normalOrderCount = 0
     val specialOrder = SpecialOrder()
@@ -13,7 +13,7 @@ class Customer(val name: String, val location: String) {
             specialOrder.date = Date()
             specialOrder.number = "SOD-00$specialOrderCount"
             specialOrder.confirm()
-            specialOrder.dispatch(this.name, this.location)
+            specialOrder.dispatch(name, this.location)
             specialOrder.close(this.name)
         }else if (type == "Normal" || type == "NORMAL" || type == "normal"){
             normalOrderCount++
