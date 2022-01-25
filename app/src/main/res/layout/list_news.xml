@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/rounded_background"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/newsImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        tools:src = "@tools:sample/avatars"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/newsSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Source"
+            />
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Name"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/newsAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Author"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
