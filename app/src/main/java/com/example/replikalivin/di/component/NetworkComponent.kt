@@ -2,7 +2,7 @@
 //
 //import com.example.replikalivin.model.retrofit.RetrofitInstance
 //import com.example.replikalivin.modelview.NewsViewModel
-//import com.example.replikalivin.ui.NewsRecycleViewActivity
+//import com.example.replikalivin.temp.NewsRecycleViewActivity
 //import dagger.Component
 //import dagger.Provides
 //import javax.inject.Singleton

@@ -1,4 +1,4 @@
-package com.example.replikalivin.ui
+package com.example.replikalivin.temp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

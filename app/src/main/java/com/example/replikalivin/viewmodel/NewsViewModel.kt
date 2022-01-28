@@ -1,11 +1,9 @@
-package com.example.replikalivin.modelview
+package com.example.replikalivin.viewmodel
 
-import android.app.Application
 import androidx.lifecycle.*
 //import com.example.replikalivin.NewsApplication
 
 import com.example.replikalivin.model.article
-import com.example.replikalivin.model.retrofit.ApiEndpoint
 import com.example.replikalivin.model.retrofit.RetrofitInstance
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

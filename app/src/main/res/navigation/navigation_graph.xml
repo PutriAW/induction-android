@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.replikalivin.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_BIFastFragment"
+            app:destination="@id/BIFastFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newsRecyclerViewFragment"
+            app:destination="@id/newsRecyclerViewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BIFastFragment"
+        android:name="com.example.replikalivin.ui.BIFastFragment"
+        android:label="fragment_b_i_fast"
+        tools:layout="@layout/fragment_b_i_fast" >
+    </fragment>
+    <fragment
+        android:id="@+id/newsRecyclerViewFragment"
+        android:name="com.example.replikalivin.ui.NewsRecyclerViewFragment"
+        android:label="fragment_news_recycler_view"
+        tools:layout="@layout/fragment_news_recycler_view" />
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.example.replikalivin.ui.RecyclerViewFragment"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" />
+
+</navigation>

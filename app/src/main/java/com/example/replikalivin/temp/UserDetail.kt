@@ -1,4 +1,4 @@
-package com.example.replikalivin.ui
+package com.example.replikalivin.temp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,12 +14,6 @@ class UserDetail : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.hide()
-
-//        var receivedPhoto: ImageView = findViewById(R.id.detailAvatar)
-//        var receivedName : TextView = findViewById(R.id.nameDetail)
-//        var receivedpPosition : TextView = findViewById(R.id.positionDetail)
-//        var receivedDepartment: TextView = findViewById(R.id.departmentDetail)
-//        var receivedDescription: TextView = findViewById(R.id.descriptionContent)
 
         binding.detailAvatar.setImageResource(intent.getIntExtra("detailAvatar", 0))
         binding.nameDetail.text = intent.getStringExtra("nameDetail")

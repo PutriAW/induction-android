@@ -1,4 +1,4 @@
-package com.example.replikalivin.ui
+package com.example.replikalivin.temp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,9 +13,7 @@ import com.example.replikalivin.adapter.NewsRecycleViewAdapter
 import com.example.replikalivin.databinding.ActivityNewsRecycleViewBinding
 import com.example.replikalivin.di.component.DaggerAppComponent
 //import com.example.replikalivin.di.component.DaggerNetworkComponent
-import com.example.replikalivin.model.retrofit.ApiEndpoint
-import com.example.replikalivin.modelview.NewsViewModel
-import com.example.replikalivin.modelview.NewsViewModelFactory
+import com.example.replikalivin.viewmodel.NewsViewModel
 import javax.inject.Inject
 
 class NewsRecycleViewActivity : AppCompatActivity() {
@@ -43,12 +41,6 @@ class NewsRecycleViewActivity : AppCompatActivity() {
         supportActionBar?.elevation = 0f
 
         binding.listNRV.layoutManager = layoutManager
-
-        // Builder for dagger
-//        DaggerNetworkComponent.builder().build().inject(this)
-
-        // View Model Section
-//        viewModel = ViewModelProvider(this).get(NewsViewModel::class.java)
 
         DaggerAppComponent.builder().build().inject(this)
         viewModel = ViewModelProvider(this, factory)[NewsViewModel::class.java]

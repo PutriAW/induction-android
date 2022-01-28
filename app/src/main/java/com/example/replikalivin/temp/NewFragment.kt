@@ -1,4 +1,4 @@
-package com.example.replikalivin.ui
+package com.example.replikalivin.temp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

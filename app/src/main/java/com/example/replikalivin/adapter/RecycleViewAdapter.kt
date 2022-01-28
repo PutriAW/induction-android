@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.replikalivin.utils.ListUser
 import com.example.replikalivin.databinding.ListUserBinding
-import com.example.replikalivin.ui.UserDetail
+import com.example.replikalivin.temp.UserDetail
 
 class RecycleViewAdapter(private val listUser: ListUser): RecyclerView.Adapter<RecycleViewAdapter.ListViewHolder>(){
     class ListViewHolder(val binding: ListUserBinding) : RecyclerView.ViewHolder(binding.root) {

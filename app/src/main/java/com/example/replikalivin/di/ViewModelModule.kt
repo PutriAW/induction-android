@@ -2,8 +2,8 @@ package com.example.replikalivin.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.replikalivin.modelview.NewsViewModel
-import com.example.replikalivin.modelview.NewsViewModelFactory
+import com.example.replikalivin.viewmodel.NewsViewModel
+import com.example.replikalivin.viewmodel.NewsViewModelFactory
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
